@@ -3,7 +3,7 @@ name: Blob storage website CI
 
 on:
     push:
-        branches: [ master ]
+        branches: [ main ]
 
 jobs:
   build:
@@ -20,15 +20,4 @@ jobs:
         azcliversion: 2.0.72
         inlineScript: |
             az storage blob upload-batch --account-name <cseastus10032001a0ed3a48> --auth-mode key -d '$web' -s .
-    - name: Purge CDN endpoint
-      uses: azure/CLI@v1
-      with:
-        azcliversion: 2.0.72
-        inlineScript: |
-           az cdn endpoint purge --content-paths  "/*" --profile-name "defi/dmcst" --name "https://dmcst.azureedge.net" --resource-group "cloud-shell-storage-eastus"
-
-  # Azure logout
-    - name: logout
-      run: |
-            az logout
-      if: always()
+   
