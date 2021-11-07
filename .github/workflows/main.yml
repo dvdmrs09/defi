@@ -19,5 +19,5 @@ jobs:
       with:
         azcliversion: 2.0.72
         inlineScript: |
-            az storage blob upload-batch --account-name <cseastus10032001a0ed3a48> --auth-mode key -d '$web' -s .
+            az storage blob upload-batch --account-name <cloud-shell-storage-eastus> --auth-mode key -d '$web' -s .
    
