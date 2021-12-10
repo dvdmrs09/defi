@@ -19,4 +19,4 @@ jobs:
       with:
         azcliversion: 2.0.72
         inlineScript: |
-            az storage blob upload-batch --connection-string "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=blobcjomy6e2ggq3w;AccountKey=cgVxK+EZI/JdglKJNCCe4aq+tYlbDAiBfODbcndbID2DxjKzS7Ry51aBfKeLXYNkKfvVL/rV2Sai6/bSEW2Zig==" -s . -d ./github/blob 
+            az storage blob upload-batch --auth-mode key -d '$web' --connection-string "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=blobcjomy6e2ggq3w;AccountKey=cgVxK+EZI/JdglKJNCCe4aq+tYlbDAiBfODbcndbID2DxjKzS7Ry51aBfKeLXYNkKfvVL/rV2Sai6/bSEW2Zig==" -s . -d ./github/blob 
