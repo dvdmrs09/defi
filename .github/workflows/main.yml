@@ -19,5 +19,4 @@ jobs:
       with:
         azcliversion: 2.0.72
         inlineScript: |
-            az storage blob upload-batch --account-name <blobcjomy6e2ggq3w> --auth-mode key -d 'cgVxK+EZI/JdglKJNCCe4aq+tYlbDAiBfODbcndbID2DxjKzS7Ry51aBfKeLXYNkKfvVL/rV2Sai6/bSEW2Zig==
-' -s .
+            az storage blob upload-batch --account-name <blobcjomy6e2ggq3w> --auth-mode key -d <cgVxK+EZI/JdglKJNCCe4aq+tYlbDAiBfODbcndbID2DxjKzS7Ry51aBfKeLXYNkKfvVL/rV2Sai6/bSEW2Zig==> -s .
